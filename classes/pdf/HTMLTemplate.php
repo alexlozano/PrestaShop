@@ -68,7 +68,7 @@ abstract class HTMLTemplateCore
             'shop_fax' => Configuration::get('PS_SHOP_FAX', null, null, $id_shop),
             'shop_phone' => Configuration::get('PS_SHOP_PHONE', null, null, $id_shop),
             'shop_email' => Configuration::get('PS_SHOP_EMAIL', null, null, $id_shop),
-            'free_text' => Configuration::get('PS_INVOICE_FREE_TEXT', (int)Context::getContext()->language->id, null, $id_shop)
+            'free_text' => Configuration::get('PS_INVOICE_LEGAL_FREE_TEXT', (int)Context::getContext()->language->id, null, $id_shop)
         ));
 
         return $this->smarty->fetch($this->getTemplate('footer'));
